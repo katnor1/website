@@ -9,12 +9,17 @@
   <body>
     <iframe
       src="https://katienorthage.wixsite.com/portfolio"
-      style="position: fixed; left: 0px; top: -52px; width: 100%; height: 100%"
+      style="
+        position: fixed;
+        left: 0px;
+        top: -52px;
+        width: 100%;
+        height: calc(100vh + 50px);
+      "
     >
     </iframe>
     <script>
       if (window.innerWidth < 778) {
-        // document.querySelector("iframe").style.width = "110%";
         let adsElement = document
           .querySelector("iframe")
           .contentWindow.document.querySelector("#WIX_ADS");
@@ -27,14 +32,6 @@
           .contentWindow.document.querySelector(":root");
         root.style.setProperty("--wix-ads-height", "0px");
         root.style.setProperty("--wix-ads-top-height", "0px");
-
-        // Update height
-        let currentHeight = document
-          .querySelector("iframe")
-          .style.height.replace("px", "");
-        document.querySelector("iframe").style.height = `${
-          parseInt(currentHeight) + adsHeight
-        }px`;
       }
     </script>
   </body>
