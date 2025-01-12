@@ -14,25 +14,23 @@
         left: 0px;
         top: -52px;
         width: 100%;
-        height: calc(100vh + 50px);
+        height: calc(100vh + 52px);
       "
     >
     </iframe>
     <script>
-      if (window.innerWidth < 778) {
-        let adsElement = document
-          .querySelector("iframe")
-          .contentWindow.document.querySelector("#WIX_ADS");
-        let adsHeight = adsElement.getBoundingClientRect().height;
+      // let adsElement = document
+      //   .querySelector("iframe")
+      //   .contentWindow.document.querySelector("#WIX_ADS");
+      // let adsHeight = adsElement.getBoundingClientRect().height;
 
-        // Remove adds
-        adsElement.remove();
-        let root = document
-          .querySelector("iframe")
-          .contentWindow.document.querySelector(":root");
-        root.style.setProperty("--wix-ads-height", "0px");
-        root.style.setProperty("--wix-ads-top-height", "0px");
-      }
+      // // Remove adds
+      // adsElement.remove();
+      // let root = document
+      //   .querySelector("iframe")
+      //   .contentWindow.document.querySelector(":root");
+      // root.style.setProperty("--wix-ads-height", "0px");
+      // root.style.setProperty("--wix-ads-top-height", "0px");
     </script>
   </body>
 </html>
